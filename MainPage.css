@@ -1,0 +1,186 @@
+/* CSS in MainPage.css */
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 5px 5px; /* Add padding to the left and right sides */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 38.9% 60%; /* 60% for main, 40% for aside */
+    gap: 15px;
+}
+
+header {
+    background-color: #333;
+    background: linear-gradient(145deg, rgb(106, 106, 105), rgb(27, 27, 28));
+    box-shadow: 0 0 10px rgb(240, 233, 194), 0 0 20px rgb(245, 237, 218), 0 0 30px rgb(123, 123, 103), 0 0 40px rgb(249, 249, 250), 0 0 50px rgb(233, 232, 229);
+
+    color: white;
+    text-align: center;
+    padding: 9px ;
+    grid-column: span 2;
+}
+h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    background-image: linear-gradient(to right, 
+        #e7e798, #5194ec 16.666%, 
+        #f64949 33.333%, #afe66c 60%, 
+        #4f7a86 50%, #a9ebeb 60.666%, 
+        #ca8fe7 66.666%, #f8f6fa 83.333%, 
+        #0f2c19 83.333%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+main,aside {
+    padding: 9px;
+    background-color: #7b7b7b;
+    border: 1px solid #cecaca;
+    height: 60vh; /* Adjust the height as needed */
+}
+main {
+    overflow: auto;
+}
+aside{
+    text-align: center;
+    background: linear-gradient(145deg, rgb(201, 200, 200),  rgb(126, 126, 126));
+    box-shadow: 0 0 10px rgb(240, 233, 194), 0 0 5px rgb(186, 186, 186), 0 0 5px rgb(200, 198, 184), 0 0 40px rgb(242, 241, 241), 0 0 50px rgb(159, 159, 158);
+
+}
+aside h2 {
+    text-align: start;
+    padding: 19px;
+
+}
+main{
+    background: linear-gradient(145deg, rgb(126, 126, 126), rgb(201, 200, 200));
+    box-shadow: 0 0 10px rgb(201, 201, 201), 0 0 5px rgb(171, 170, 170), 0 0 5px rgb(198, 198, 197), 0 0 40px rgb(242, 241, 241), 0 0 50px rgb(255, 255, 254);
+
+}
+footer {
+    background: linear-gradient(145deg,  rgb(27, 27, 28), rgb(210, 210, 210));
+    box-shadow: 0 0 10px rgb(132, 132, 133), 0 0 5px rgb(249, 249, 248), 0 0 5px rgb(247, 247, 246), 0 0 40px rgb(211, 211, 210), 0 0 10px rgb(243, 243, 242);
+    padding: 10px;
+    grid-column: span 2;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    font-size: 25px;
+    text-decoration: underline;
+}
+nav ul li:nth-child(1) a {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(145deg,  rgb(185, 185, 186), rgb(210, 210, 210));
+    box-shadow: 0 0 10px rgb(132, 132, 133), 0 0 5px rgb(249, 249, 248), 0 0 5px rgb(247, 247, 246), 0 0 40px rgb(211, 211, 210), 0 0 10px rgb(243, 243, 242);
+}
+
+/* Style for the second link */
+nav ul li:nth-child(2) a {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(145deg,  rgb(185, 185, 186), rgb(210, 210, 210));
+    box-shadow: 0 0 10px rgb(132, 132, 133), 0 0 5px rgb(249, 249, 248), 0 0 5px rgb(247, 247, 246), 0 0 40px rgb(211, 211, 210), 0 0 10px rgb(243, 243, 242);
+
+}
+.error {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f4dede;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 9999; /* Ensure the error message appears on top */
+}
+
+.error button {
+    margin-top: 10px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(143, 135, 135, 0.9); /* semi-transparent black */
+    z-index: 9998; /* Ensure the overlay is behind the error message */
+}
+.numbers-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(145deg, rgb(245, 242, 242), rgb(170, 168, 168));
+    border: 2px solid rgb(168, 166, 166);
+
+}
+
+.numbers-table td {
+    padding: 2px;
+    text-align: center;
+}
+.almost-prime {
+    background-color: rgb(87, 87, 250);
+    border: 2px solid #474646;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, rgb(66, 7, 242), rgb(181, 196, 238));
+
+
+}
+
+.brilliant {
+    background-color: yellow;
+    border: 2px solid #c0bdbd;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, rgb(226, 237, 11), rgb(234, 224, 178));
+
+}
+
+.numbers-table .normal {
+    background-color: white; /* Set background color to white for normal numbers */
+    border: 2px solid #afadad;
+    box-shadow: 2px 2px 4px rgba(110, 107, 107, 0.5);
+    background: linear-gradient(145deg, rgb(186, 184, 184), rgb(255, 255, 255));
+
+}
+
+input[type="text"], button {
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    border-radius:15px 5px;
+    margin-bottom: 10px;
+    width: calc(50% - 5px);
+}
+
+input[type="text"] {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+button {
+    color: rgb(255, 255, 253);
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px 15px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow here */
+
+}
+
+button:hover {
+    background-color: #333;
+}
+
+button:active {
+    transform: translateY(1px);
+}
